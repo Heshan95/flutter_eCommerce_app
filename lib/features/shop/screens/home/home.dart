@@ -2,6 +2,7 @@ import 'package:ecommerce_application_2024/common/widgets/custom_shapes/containe
 import 'package:ecommerce_application_2024/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:ecommerce_application_2024/common/widgets/layouts/grid_layout.dart';
 import 'package:ecommerce_application_2024/common/widgets/products/products_cards/products_card_vertical.dart';
+import 'package:ecommerce_application_2024/common/widgets/text/section_heading.dart';
 import 'package:ecommerce_application_2024/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:ecommerce_application_2024/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:ecommerce_application_2024/features/shop/screens/home/widgets/promot_slider.dart';
@@ -45,6 +46,12 @@ class HomeScreen extends StatelessWidget {
                     TImages.promoBanner3,
                   ]),
                   const SizedBox(height: TSizes.spaceBtwSections),
+
+                  TSectionHeading(
+                    titel: 'Popular Products',
+                    onPressed: () {},
+                  ),
+                  const SizedBox(height: TSizes.spaceBtwItems),
 
                   //Popular products
                   TGridLayout(

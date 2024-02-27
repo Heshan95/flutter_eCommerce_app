@@ -1,7 +1,7 @@
 
 class TTexts {
 
-  // -- GLOBAL Texts
+  // -- Global Texts
   static const String and = "and";
   static const String skip = "Skip";
   static const String done = "Done";
@@ -62,7 +62,7 @@ class TTexts {
 
   // -- Home
   static const String homeAppbarTitle = "Good day for shopping";
-  static const String homeAppbarSubTitle = "Taimoor Sikander";
+  static const String homeAppbarSubTitle = "Heshan Kulasooriya";
 
 
 }

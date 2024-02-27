@@ -3,6 +3,7 @@ import 'package:ecommerce_application_2024/common/widgets/custom_shapes/containe
 import 'package:ecommerce_application_2024/common/widgets/icons/t_circular_icon.dart';
 import 'package:ecommerce_application_2024/common/widgets/images/round_image.dart';
 import 'package:ecommerce_application_2024/common/widgets/products/products_cards/products_price_text.dart';
+import 'package:ecommerce_application_2024/common/widgets/text/brand_titel_text_with_verified_icon.dart';
 import 'package:ecommerce_application_2024/common/widgets/text/product_titel_text.dart';
 import 'package:ecommerce_application_2024/util/constants/colors.dart';
 import 'package:ecommerce_application_2024/util/constants/image_strings.dart';
@@ -21,7 +22,7 @@ class TProductCardVertical extends StatelessWidget {
       onTap: () {},
       child: Container(
         width: 180,
-        padding: const EdgeInsets.all(1),
+       // padding: const EdgeInsets.all(TSizes.sm),
         decoration: BoxDecoration(
           boxShadow: [TShadowStyle.vericalProductShadow],
           borderRadius: BorderRadius.circular(TSizes.productImageRadius),
@@ -68,59 +69,72 @@ class TProductCardVertical extends StatelessWidget {
             ),
 
             // Details
-            Padding(
-              padding: const EdgeInsets.only(left: TSizes.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: TSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const TProductTitelText(
+                  TProductTitelText(
                       titel: 'Green Nike AIR shoes', smallSize: true),
-                  const SizedBox(
+                  SizedBox(
                     height: TSizes.spaceBtwItems / 2,
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        'Nike',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(width: TSizes.xs),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: TColors.primary,
-                        size: TSizes.iconXs,
-                      )
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const TProductPriceText(price: '35,000'),
-                      Container(
-                        decoration: const BoxDecoration(
-                            color: TColors.dark,
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(TSizes.cardRadiusMd),
-                              bottomRight:
-                                  Radius.circular(TSizes.productImageRadius),
-                            )),
-                        child: const SizedBox(
-                            width: TSizes.iconLg * 1.2,
-                            height: TSizes.iconLg * 1.2,
-                            child: Center(
-                                child:
-                                    Icon(Iconsax.add, color: TColors.white))),
-                      )
-                    ],
-                  ),
+                  TBrandTitelTextWithVerifiedIcon(titel: 'Nike'),
                 ],
               ),
-            )
+            ),
+            const Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Padding(
+                  padding: EdgeInsets.all(TSizes.sm),
+                  child: TProductPriceText(price: '35,000'),
+                ),
+                Container(
+                  decoration: const BoxDecoration(
+                      color: TColors.dark,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(TSizes.cardRadiusMd),
+                        bottomRight: Radius.circular(TSizes.productImageRadius),
+                      )),
+                  child: const SizedBox(
+                      width: TSizes.iconLg * 1.2,
+                      height: TSizes.iconLg * 1.2,
+                      child: Center(
+                          child: Icon(Iconsax.add, color: TColors.white))),
+                )
+              ],
+            ),
           ],
         ),
       ),
+    );
+  }
+}
+
+class BrandTitelTextWithVerifiedIcon extends StatelessWidget {
+  const BrandTitelTextWithVerifiedIcon({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Text(
+          'Nike',
+          overflow: TextOverflow.ellipsis,
+          maxLines: 1,
+          style: Theme.of(context).textTheme.labelMedium,
+        ),
+        const SizedBox(width: TSizes.xs),
+        const Icon(
+          Iconsax.verify5,
+          color: TColors.primary,
+          size: TSizes.iconXs,
+        )
+      ],
     );
   }
 }

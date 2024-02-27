@@ -1,4 +1,3 @@
-import 'package:ecommerce_application_2024/util/constants/colors.dart';
 import 'package:ecommerce_application_2024/util/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +9,7 @@ class TRoundImages extends StatelessWidget {
     required this.imageURL,
     this.applyIamgeRadius = true,
     this.border,
-    this.backgroundColor = TColors.light,
+    this.backgroundColor,
     this.fit = BoxFit.contain,
     this.padding,
     this.isNetworkImage = false,
@@ -22,7 +21,7 @@ class TRoundImages extends StatelessWidget {
   final String imageURL;
   final bool applyIamgeRadius;
   final BoxBorder? border;
-  final Color backgroundColor;
+  final Color? backgroundColor;
   final BoxFit? fit;
   final EdgeInsetsGeometry? padding;
   final bool isNetworkImage;
