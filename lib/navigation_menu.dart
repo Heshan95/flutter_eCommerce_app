@@ -1,5 +1,5 @@
+import 'package:ecommerce_application_2024/features/personalization/screens/settings/setting.dart';
 import 'package:ecommerce_application_2024/features/shop/screens/home/home.dart';
-import 'package:ecommerce_application_2024/features/shop/screens/profile/widgets/profile.dart';
 import 'package:ecommerce_application_2024/features/shop/screens/store/widgets/store.dart';
 import 'package:ecommerce_application_2024/features/shop/screens/wishlist/widgets/wishlist.dart';
 import 'package:ecommerce_application_2024/util/constants/colors.dart';
@@ -48,6 +48,6 @@ class NavigationController extends GetxController {
     const HomeScreen(),
     const StoreScreen(),
     const Wishlist(),
-    const ProfileScreen(),
+    const SettingScreen(),
   ];
 }

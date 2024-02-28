@@ -16,8 +16,7 @@ class TPrimaryHeaderContainer extends StatelessWidget {
     return TCurvedEdgeWidget(
       child: Container(
         color: TColors.primary,
-        padding: const EdgeInsets.only(bottom: 0),
-        height: 400,
+      //  padding: const EdgeInsets.only(bottom: 0),
         child: Stack(
           children: [
             Positioned(
