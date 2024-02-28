@@ -3,9 +3,11 @@ import 'package:ecommerce_application_2024/common/widgets/custom_shapes/containe
 import 'package:ecommerce_application_2024/common/widgets/list_tiles/setting_menu_tile.dart';
 import 'package:ecommerce_application_2024/common/widgets/list_tiles/user_profile.dart';
 import 'package:ecommerce_application_2024/common/widgets/text/section_heading.dart';
+import 'package:ecommerce_application_2024/features/shop/screens/profile/widgets/profile.dart';
 import 'package:ecommerce_application_2024/util/constants/colors.dart';
 import 'package:ecommerce_application_2024/util/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SettingScreen extends StatelessWidget {
@@ -30,7 +32,7 @@ class SettingScreen extends StatelessWidget {
                           .apply(color: TColors.white),
                     ),
                   ),
-                  const TUserProfileTile(),
+                   TUserProfileTile(onPressed:() => Get.to(()=>const ProfileScreen())),
                   const SizedBox(height: TSizes.spaceBtwSections),
                 ],
               ),
