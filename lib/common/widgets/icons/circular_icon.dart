@@ -3,14 +3,14 @@ import 'package:ecommerce_application_2024/util/constants/sizes.dart';
 import 'package:ecommerce_application_2024/util/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
-class TCircularIcon extends StatelessWidget {
-  const TCircularIcon({
+class CircularIcon extends StatelessWidget {
+  const CircularIcon({
     super.key,
     this.width,
     this.height,
     this.size = TSizes.lg,
     required this.icon,
-    this.color = TColors.dark,
+    this.color,
     this.backgroundColor,
     this.onPressed,
   });

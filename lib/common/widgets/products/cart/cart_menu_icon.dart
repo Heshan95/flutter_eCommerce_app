@@ -21,7 +21,7 @@ class TCartCounterIcon extends StatelessWidget {
         IconButton(
           onPressed: onPressed,
           icon: const Icon(Iconsax.shopping_bag),
-          color: dark ? TColors.white : TColors.dark,
+          color: dark ? TColors.dark : TColors.white,
         ),
         Positioned(
           right: 0,
@@ -29,14 +29,14 @@ class TCartCounterIcon extends StatelessWidget {
             width: 18.0,
             height: 18.0,
             decoration: BoxDecoration(
-              color: dark ?TColors.white : TColors.dark,
+              color: dark ?TColors.dark : TColors.white,
               borderRadius: BorderRadius.circular(100),
             ),
             child: Center(
               child: Text(
                 '2',
                 style: Theme.of(context).textTheme.labelLarge!.apply(
-                    color: dark ? TColors.dark : TColors.white,
+                    color: dark ? TColors.white : TColors.dark,
                     fontSizeFactor: 0.8),
               ),
             ),

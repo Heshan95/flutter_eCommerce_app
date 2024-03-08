@@ -1,15 +1,17 @@
 import 'package:ecommerce_application_2024/common/styles/shadow.dart';
 import 'package:ecommerce_application_2024/common/widgets/custom_shapes/containers/circle_container.dart';
-import 'package:ecommerce_application_2024/common/widgets/icons/t_circular_icon.dart';
+import 'package:ecommerce_application_2024/common/widgets/icons/circular_icon.dart';
 import 'package:ecommerce_application_2024/common/widgets/images/round_image.dart';
 import 'package:ecommerce_application_2024/common/widgets/products/products_cards/products_price_text.dart';
 import 'package:ecommerce_application_2024/common/widgets/text/brand_titel_text_with_verified_icon.dart';
 import 'package:ecommerce_application_2024/common/widgets/text/product_titel_text.dart';
+import 'package:ecommerce_application_2024/features/shop/screens/product_details/prodcts_details.dart';
 import 'package:ecommerce_application_2024/util/constants/colors.dart';
 import 'package:ecommerce_application_2024/util/constants/image_strings.dart';
 import 'package:ecommerce_application_2024/util/constants/sizes.dart';
 import 'package:ecommerce_application_2024/util/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TProductCardVertical extends StatelessWidget {
@@ -19,7 +21,7 @@ class TProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(()=>const ProductDetails()),
       child: Container(
         width: 180,
        // padding: const EdgeInsets.all(TSizes.sm),
@@ -58,7 +60,7 @@ class TProductCardVertical extends StatelessWidget {
                   const Positioned(
                       top: 0,
                       right: 0,
-                      child: TCircularIcon(
+                      child: CircularIcon(
                           icon: Iconsax.heart5, color: Colors.red)),
                 ],
               ),

@@ -1,9 +1,7 @@
 import 'package:ecommerce_application_2024/common/widgets/appbar/appbar.dart';
 import 'package:ecommerce_application_2024/common/widgets/images/circular_image.dart';
-import 'package:ecommerce_application_2024/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:ecommerce_application_2024/common/widgets/text/section_heading.dart';
 import 'package:ecommerce_application_2024/features/shop/screens/profile/widgets/profile_menu.dart';
-import 'package:ecommerce_application_2024/util/constants/colors.dart';
 import 'package:ecommerce_application_2024/util/constants/image_strings.dart';
 import 'package:ecommerce_application_2024/util/constants/sizes.dart';
 import 'package:flutter/material.dart';
