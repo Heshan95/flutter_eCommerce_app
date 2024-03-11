@@ -3,6 +3,7 @@ import 'package:ecommerce_application_2024/common/widgets/custom_shapes/containe
 import 'package:ecommerce_application_2024/common/widgets/list_tiles/setting_menu_tile.dart';
 import 'package:ecommerce_application_2024/common/widgets/list_tiles/user_profile.dart';
 import 'package:ecommerce_application_2024/common/widgets/text/section_heading.dart';
+import 'package:ecommerce_application_2024/features/personalization/screens/address/address.dart';
 import 'package:ecommerce_application_2024/features/shop/screens/profile/widgets/profile.dart';
 import 'package:ecommerce_application_2024/util/constants/colors.dart';
 import 'package:ecommerce_application_2024/util/constants/sizes.dart';
@@ -45,7 +46,7 @@ class SettingScreen extends StatelessWidget {
                 children: [
                   const TSectionHeading(titel: 'Account Heading', showActionButton: false,),
                   const SizedBox(height: TSizes.spaceBtwItems),
-                  TSettingMenuTile(icon: Iconsax.home,titel: 'My Address',subTitel: 'Set shipping address', onTap: () {},),
+                  TSettingMenuTile(icon: Iconsax.home,titel: 'My Address',subTitel: 'Set shipping address', onTap: () => Get.to(()=> const UserAddressScreen()),),
                   TSettingMenuTile(icon: Iconsax.shopping_cart,titel: 'My Cart',subTitel: 'Add, remove products and move to checkout', onTap: () {},),
                   TSettingMenuTile(icon: Iconsax.bag_tick,titel: 'My Orders',subTitel: 'In-progress and Completed orders', onTap: () {},),
                   TSettingMenuTile(icon: Iconsax.discount_shape,titel: 'My Coupons',subTitel: 'List of all the discounted coupons', onTap: () {},),
