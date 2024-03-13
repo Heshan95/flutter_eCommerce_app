@@ -41,6 +41,7 @@ class TProductCardVertical extends StatelessWidget {
                 children: [
                   const TRoundImages(
                       imageURL: TImages.productImage1, applyIamgeRadius: true),
+                      // Slag tag
                   Positioned(
                     top: 12,
                     child: TCircularContainer(
@@ -57,6 +58,7 @@ class TProductCardVertical extends StatelessWidget {
                       ),
                     ),
                   ),
+                  // favourite icon button
                   const Positioned(
                       top: 0,
                       right: 0,
@@ -93,6 +95,8 @@ class TProductCardVertical extends StatelessWidget {
                   padding: EdgeInsets.all(TSizes.sm),
                   child: TProductPriceText(price: '35,000'),
                 ),
+
+                // Add to cart button
                 Container(
                   decoration: const BoxDecoration(
                       color: TColors.dark,
