@@ -6,16 +6,16 @@ Explore the world of mobile commerce with this Flutter-based eCommerce applicati
 
 _Key Features:_
 
-***Firebase Integration:** Utilize Firebase Realtime Database for efficient data storage and synchronization.
+* **Firebase Integration:** Utilize Firebase Realtime Database for efficient data storage and synchronization.
 
-***User Authentication:** Enable secure user authentication with Firebase Authentication, ensuring user privacy and account management.
+* **User Authentication:** Enable secure user authentication with Firebase Authentication, ensuring user privacy and account management.
 
-***Product Catalog:** Browse through a rich catalog of products, complete with detailed descriptions and images.
+* **Product Catalog:** Browse through a rich catalog of products, complete with detailed descriptions and images.
 
-***Shopping Cart:** Add products to the cart, manage quantities, and proceed to checkout seamlessly.
+* **Shopping Cart:** Add products to the cart, manage quantities, and proceed to checkout seamlessly.
 
-***Order Management:** Track orders, view order history, and receive notifications for order updates.
+* **Order Management:** Track orders, view order history, and receive notifications for order updates.
 
-***Customizable UI:** Tailor the app's user interface to suit your brand and design preferences with Flutter's flexible UI components.
+* **Customizable UI:** Tailor the app's user interface to suit your brand and design preferences with Flutter's flexible UI components.
 
 Whether you're a developer looking to learn Flutter or an entrepreneur seeking to launch your eCommerce venture, this project provides a solid foundation for building a feature-rich mobile shopping app.
